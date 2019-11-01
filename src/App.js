@@ -18,6 +18,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
+import Feed from './Feed';
 import './App.css';
 
 const drawerWidth = 240;
@@ -160,7 +161,7 @@ export default function Dashboard() {
             <Grid item xs={12} md={8} lg={8}>
               <Paper className={fixedHeightPaper}>
                 <Box>
-                  Evaluation feed
+                  <Feed/>
                 </Box>
               </Paper>
             </Grid>
