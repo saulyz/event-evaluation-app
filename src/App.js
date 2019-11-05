@@ -17,7 +17,10 @@ import Box from '@material-ui/core/Box';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import BarChartIcon from '@material-ui/icons/BarChart';
 import { mainListItems, secondaryListItems } from './listItems';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
 import Feed from './Feed';
 import EventInfo from './EventInfo';
 import Score from './Score';
@@ -102,6 +105,14 @@ const useStyles = makeStyles(theme => ({
   fixedHeight: {
     height: 240,
   },
+  fab: {
+    margin: 0,
+    top: 'auto',
+    right: 20,
+    bottom: 20,
+    left: 'auto',
+    position: 'fixed',
+  }
 }));
 
 export default function Dashboard() {
@@ -132,6 +143,9 @@ export default function Dashboard() {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             MyLiveEvent
           </Typography>
+          <IconButton color="inherit">
+            <BarChartIcon />
+          </IconButton>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />
@@ -175,6 +189,9 @@ export default function Dashboard() {
               </Paper>
             </Grid>
           </Grid>
+          <Fab color="primary" aria-label="add" className={classes.fab}>
+            <AddIcon />
+          </Fab>
         </Container>
       </main>
     </div>
