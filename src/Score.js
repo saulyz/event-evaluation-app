@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { pink, teal } from '@material-ui/core/colors';
+import { red, green } from '@material-ui/core/colors';
 import Box from "@material-ui/core/Box";
 import Avatar from "@material-ui/core/Avatar";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";
@@ -22,10 +22,10 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
   },
   scoreIconUp: {
-    backgroundColor: teal[200]
+    backgroundColor: green[200]
   },
   scoreIconDown: {
-    backgroundColor: pink[200]
+    backgroundColor: red[200]
   },
   scoreboardItem: {
     margin: '0 10px'
