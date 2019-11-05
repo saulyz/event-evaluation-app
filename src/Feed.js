@@ -7,7 +7,7 @@ import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import ThumbDownIcon from "@material-ui/icons/ThumbDown";
-import {Typography} from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
   root: {

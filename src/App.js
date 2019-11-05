@@ -19,6 +19,8 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import Feed from './Feed';
+import EventInfo from './EventInfo';
+import Score from './Score';
 import './App.css';
 
 const drawerWidth = 240;
@@ -158,7 +160,7 @@ export default function Dashboard() {
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
             {/* Feed */}
-            <Grid item xs={12} md={8} lg={8}>
+            <Grid item xs={12} md={6} lg={6}>
               <Paper className={fixedHeightPaper}>
                 <Box>
                   <Feed/>
@@ -166,15 +168,10 @@ export default function Dashboard() {
               </Paper>
             </Grid>
             {/* Dashboard */}
-            <Grid item xs={12} md={4} lg={4}>
+            <Grid item xs={12} md={6} lg={6}>
               <Paper className={fixedHeightPaper}>
-                <Box mx="auto" my={6}>
-                  Event info 
-                </Box>
-                <Divider />
-                <Box mx="auto" my={3}>
-                  Score
-                </Box>
+                <EventInfo /> 
+                <Score />
               </Paper>
             </Grid>
           </Grid>
